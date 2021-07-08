@@ -18,7 +18,7 @@ const connectWithRetry = () => {
 connectWithRetry();
 
 app.get("/", (req, res) => {
-  res.send("<h2>Hi Quinscape! Docker!</h2>");
+  res.send("<h2>Hi Quinscape! Docker rules!</h2>");
 });
 
 app.listen(port, () => console.log(`listen on port ${port}`));
