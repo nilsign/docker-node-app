@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  node-app:
+    build:
+      context: .
+      args:
+        NODE_ENV: production
+    environment:
+      - NODE_ENV=production
+    # Overwrites the run command 'CMD ["npm", "run", "dev"]' in the
+    # Dockerfile.
+    command: npm start
